@@ -1,4 +1,4 @@
-# Modern Startup Template
+# React Zustand Vite TypeScript Template
 
 <div align="center">
 
@@ -37,6 +37,19 @@
 - 👥 **Lead Management** - Complete lead tracking system
 - 📅 **Activity Timeline** - Visual activity tracking
 - 🔍 **Search System** - Built-in search functionality
+- **Husky**: Git hooks for code quality checks
+- **lint-staged**: Run linters on git staged files
+- **commitlint**: Lint commit messages
+- **Prettier**: Automatic code formatting
+- **ESLint**: Code quality and style checking
+- **TypeScript**: Type safety and better developer experience
+- **Vite**: Fast development and optimized builds
+- **Zustand**: Simple and fast state management
+- **React Hook Form**: Efficient form handling
+- **Tailwind CSS**: Utility-first CSS framework
+- **Docker**: Containerization support
+- **Vercel**: Quick deployment configuration
+- **Nginx**: Production server setup
 
 ## 🚀 Getting Started
 
@@ -48,23 +61,21 @@
 ### Installation
 
 1. Clone the repository
+
 ```bash
 git clone https://github.com/AmirHaytham/React-Zustand-Vite-TS-temp.git
-cd React-Zustand-Vite-TS-temp
 ```
 
 2. Install dependencies
+
 ```bash
 npm install
-# or
-yarn install
 ```
 
 3. Start development server
+
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
 ## 📁 Project Structure
@@ -109,6 +120,8 @@ npm run dev         # Start development server
 npm run build       # Build for production
 npm run preview     # Preview production build
 npm run lint        # Run ESLint
+npm run lint-staged # Run linters on staged files
+npm run prepare     # Install Husky git hooks
 ```
 
 ## 🎨 Customization
@@ -116,6 +129,7 @@ npm run lint        # Run ESLint
 ### Styling
 
 The template uses Tailwind CSS with custom configuration. You can modify the theme in `tailwind.config.js`:
+
 - 🎨 Colors
 - 📝 Typography
 - 📏 Spacing
@@ -124,6 +138,7 @@ The template uses Tailwind CSS with custom configuration. You can modify the the
 ### Components
 
 Built with modern practices:
+
 - ⚛️ Functional components
 - 🪝 React hooks
 - 📘 TypeScript interfaces
