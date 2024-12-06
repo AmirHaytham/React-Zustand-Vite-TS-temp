@@ -1,4 +1,4 @@
-# React Zustand Vite TypeScript Template
+# Modern Startup Template
 
 <div align="center">
 
@@ -12,12 +12,6 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Code Style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://prettier.io/)
-[![GitHub license](https://img.shields.io/github/license/AmirHaytham/React-Zustand-Vite-TS-temp)](https://github.com/AmirHaytham/React-Zustand-Vite-TS-temp/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/AmirHaytham/React-Zustand-Vite-TS-temp)](https://github.com/AmirHaytham/React-Zustand-Vite-TS-temp/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/AmirHaytham/React-Zustand-Vite-TS-temp)](https://github.com/AmirHaytham/React-Zustand-Vite-TS-temp/issues)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/AmirHaytham/React-Zustand-Vite-TS-temp)](https://github.com/AmirHaytham/React-Zustand-Vite-TS-temp/pulls)
-[![GitHub last commit](https://img.shields.io/github/last-commit/AmirHaytham/React-Zustand-Vite-TS-temp)](https://github.com/AmirHaytham/React-Zustand-Vite-TS-temp/commits/main)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 <p align="center">
   <strong>A modern, full-featured startup template built with React, TypeScript, and Tailwind CSS.</strong><br>
@@ -43,19 +37,6 @@
 - 👥 **Lead Management** - Complete lead tracking system
 - 📅 **Activity Timeline** - Visual activity tracking
 - 🔍 **Search System** - Built-in search functionality
-- **Husky**: Git hooks for code quality checks
-- **lint-staged**: Run linters on git staged files
-- **commitlint**: Lint commit messages
-- **Prettier**: Automatic code formatting
-- **ESLint**: Code quality and style checking
-- **TypeScript**: Type safety and better developer experience
-- **Vite**: Fast development and optimized builds
-- **Zustand**: Simple and fast state management
-- **React Hook Form**: Efficient form handling
-- **Tailwind CSS**: Utility-first CSS framework
-- **Docker**: Containerization support
-- **Vercel**: Quick deployment configuration
-- **Nginx**: Production server setup
 
 ## 🚀 Getting Started
 
@@ -70,18 +51,23 @@
 
 ```bash
 git clone https://github.com/AmirHaytham/React-Zustand-Vite-TS-temp.git
+cd React-Zustand-Vite-TS-temp
 ```
 
 2. Install dependencies
 
 ```bash
 npm install
+# or
+yarn install
 ```
 
 3. Start development server
 
 ```bash
 npm run dev
+# or
+yarn dev
 ```
 
 ## 📁 Project Structure
@@ -119,26 +105,6 @@ React-Zustand-Vite-TS-temp/
 └── tsconfig.json           # TypeScript configuration
 ```
 
-## 🔧 Configuration Files
-
-### Environment Variables
-
-Copy `.env.example` to `.env` and customize the variables:
-
-```bash
-cp .env.example .env
-```
-
-Available variables:
-
-- `VITE_APP_NAME`: Application name
-- `VITE_APP_VERSION`: Application version
-- `VITE_API_URL`: API endpoint URL
-- `VITE_DEV_PORT`: Development server port
-- `VITE_DEV_HOST`: Development server host
-- `VITE_PROD_URL`: Production URL
-- `VITE_ANALYTICS_ID`: Analytics tracking ID
-
 ## 📜 Available Scripts
 
 ```bash
@@ -146,9 +112,26 @@ npm run dev         # Start development server
 npm run build       # Build for production
 npm run preview     # Preview production build
 npm run lint        # Run ESLint
-npm run lint-staged # Run linters on staged files
-npm run prepare     # Install Husky git hooks
 ```
+
+## 📚 Documentation
+
+- [Contributing Guide](./CONTRIBUTING.md)
+- [Code of Conduct](./CODE_OF_CONDUCT.md)
+- [Security Policy](./SECURITY.md)
+- [Technical Documentation](./docs/TECHNICAL.md)
+- [Changelog](./CHANGELOG.md)
+- [License](./LICENSE)
+
+The technical documentation provides detailed information about:
+
+- Project architecture and structure
+- State management patterns
+- Development tools and configurations
+- Deployment strategies
+- Security considerations
+- Performance optimizations
+- Browser support
 
 ## 🎨 Customization
 
