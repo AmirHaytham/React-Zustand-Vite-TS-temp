@@ -12,6 +12,12 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Code Style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://prettier.io/)
+[![GitHub license](https://img.shields.io/github/license/AmirHaytham/React-Zustand-Vite-TS-temp)](https://github.com/AmirHaytham/React-Zustand-Vite-TS-temp/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/AmirHaytham/React-Zustand-Vite-TS-temp)](https://github.com/AmirHaytham/React-Zustand-Vite-TS-temp/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/AmirHaytham/React-Zustand-Vite-TS-temp)](https://github.com/AmirHaytham/React-Zustand-Vite-TS-temp/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/AmirHaytham/React-Zustand-Vite-TS-temp)](https://github.com/AmirHaytham/React-Zustand-Vite-TS-temp/pulls)
+[![GitHub last commit](https://img.shields.io/github/last-commit/AmirHaytham/React-Zustand-Vite-TS-temp)](https://github.com/AmirHaytham/React-Zustand-Vite-TS-temp/commits/main)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 <p align="center">
   <strong>A modern, full-featured startup template built with React, TypeScript, and Tailwind CSS.</strong><br>
