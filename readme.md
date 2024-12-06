@@ -113,6 +113,26 @@ React-Zustand-Vite-TS-temp/
 └── tsconfig.json           # TypeScript configuration
 ```
 
+## 🔧 Configuration Files
+
+### Environment Variables
+
+Copy `.env.example` to `.env` and customize the variables:
+
+```bash
+cp .env.example .env
+```
+
+Available variables:
+
+- `VITE_APP_NAME`: Application name
+- `VITE_APP_VERSION`: Application version
+- `VITE_API_URL`: API endpoint URL
+- `VITE_DEV_PORT`: Development server port
+- `VITE_DEV_HOST`: Development server host
+- `VITE_PROD_URL`: Production URL
+- `VITE_ANALYTICS_ID`: Analytics tracking ID
+
 ## 📜 Available Scripts
 
 ```bash
