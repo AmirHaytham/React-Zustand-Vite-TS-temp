@@ -1,4 +1,4 @@
-# Modern Startup Template
+# React Zustand Vite TypeScript Template
 
 <div align="center">
 
@@ -12,150 +12,266 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Code Style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://prettier.io/)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![tested with vitest](https://img.shields.io/badge/tested_with-vitest-green.svg?style=flat-square)](https://vitest.dev)
 
 <p align="center">
-  <strong>A modern, full-featured startup template built with React, TypeScript, and Tailwind CSS.</strong><br>
+  <strong>A modern, production-ready template for building scalable React applications with TypeScript, Zustand, and Vite.</strong><br>
   Production-ready • Fully typed • Modern stack
 </p>
 
 [Demo](https://react-zustand-vite-ts-temp.vercel.app/) •
-[Key Features](#features) •
-[Quick Start](#getting-started) •
-[Documentation](#documentation)
+[Features](#-features) •
+[Quick Start](#-quick-start) •
+[Documentation](#-documentation)
 
 </div>
 
 ## ✨ Features
 
-- 🎨 **Modern UI** - Beautiful and responsive design with Tailwind CSS
-- 📱 **Fully Responsive** - Mobile-first approach for all screen sizes
-- 🔄 **State Management** - Efficient state handling with Zustand
-- 📝 **Form Management** - Easy form handling with React Hook Form
-- 🎯 **TypeScript** - Full type safety and better developer experience
-- 🚀 **Fast Development** - Lightning-fast HMR with Vite
-- 📊 **Dashboard Ready** - Pre-built dashboard with metrics
-- 👥 **Lead Management** - Complete lead tracking system
-- 📅 **Activity Timeline** - Visual activity tracking
-- 🔍 **Search System** - Built-in search functionality
+- ⚡️ **Vite** - Lightning fast build tool and dev server
+- ⚛️ **React 18** - Latest React features
+- 📘 **TypeScript** - Type safety and better DX
+- 🗃️ **Zustand** - Simple state management
+- 🎨 **Tailwind CSS** - Utility-first CSS
+- 📝 **React Hook Form** - Form handling
+- 🧪 **Testing Setup** - Vitest and React Testing Library
+- 🔧 **Code Quality** - ESLint, Prettier, and Husky
+- 📦 **Docker Ready** - Basic containerization
+- 🚀 **CI/CD** - GitHub Actions setup
+- 📄 **Documentation** - Comprehensive docs
 
-## 🚀 Getting Started
+## 🚀 Quick Start
 
 ### Prerequisites
 
 - Node.js 16.x or later
 - npm or yarn
+- Git
 
 ### Installation
 
-1. Clone the repository
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/AmirHaytham/React-Zustand-Vite-TS-temp.git
 cd React-Zustand-Vite-TS-temp
 ```
 
-2. Install dependencies
+2. Install dependencies:
 
 ```bash
 npm install
-# or
-yarn install
 ```
 
-3. Start development server
+3. Set up environment variables:
+
+```bash
+cp .env.example .env
+```
+
+4. Start development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
+
+Visit `http://localhost:3000` to see your app!
+
+## 🛠️ Available Scripts
+
+```bash
+# Development
+npm run dev         # Start development server
+npm run build      # Build for production
+npm run preview    # Preview production build
+
+# Testing
+npm run test       # Run tests
+npm run test:coverage # Run tests with coverage
+
+# Code Quality
+npm run lint       # Run ESLint
+npm run format     # Format with Prettier
+
+# Git Hooks
+npm run prepare    # Install husky hooks
+```
+
+## Tech Stack
+
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Zustand](https://zustand-demo.pmnd.rs/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Hook Form](https://react-hook-form.com/)
+- [Vitest](https://vitest.dev/)
+- [React Testing Library](https://testing-library.com/)
+- [Docker](https://www.docker.com/)
+- [Vercel](https://vercel.com/)
 
 ## 📁 Project Structure
 
-```bash
-React-Zustand-Vite-TS-temp/
-├── src/                        # Source files
-│   ├── components/            # React components
-│   │   ├── layout/           # Layout components
-│   │   │   ├── AppLayout.tsx    # Main layout wrapper
-│   │   │   ├── Navbar.tsx       # Top navigation
-│   │   │   └── Sidebar.tsx      # Side navigation
-│   │   │
-│   │   ├── leads/            # Lead management
-│   │   │   ├── LeadForm.tsx     # Lead creation form
-│   │   │   └── LeadList.tsx     # Leads display
-│   │   │
-│   │   └── common/           # Shared components
-│   │       ├── Button/          # Button components
-│   │       └── Input/           # Input components
-│   │
-│   ├── store/               # State management
-│   │   └── useStore.ts        # Main Zustand store
-│   │
-│   ├── assets/              # Static assets
-│   │   └── styles/           # Global styles
-│   │
-│   ├── App.tsx             # Main application component
-│   └── main.tsx            # Application entry point
-│
-├── public/                  # Public static files
-├── index.html              # Entry HTML file
-├── tailwind.config.js      # Tailwind configuration
-├── package.json            # Dependencies and scripts
-└── tsconfig.json           # TypeScript configuration
+```
+├── src/
+│   ├── components/
+│   │   ├── common/       # Shared components
+│   │   ├── layout/       # Layout components
+│   │   │   └── AppLayout.tsx
+│   │   └── leads/        # Lead management
+│   │       ├── LeadForm.tsx
+│   │       └── LeadForm.test.tsx
+│   ├── store/
+│   │   └── useStore.ts   # Zustand store
+│   ├── assets/          # Static assets
+│   ├── App.tsx          # Root component
+│   ├── App.css          # Root styles
+│   ├── main.tsx         # Entry point
+│   ├── index.css        # Global styles
+│   └── setupTests.ts    # Test configuration
+├── public/              # Public assets
+├── docs/               # Documentation
+│   └── TECHNICAL.md
+├── config/             # Configuration files
+│   ├── .env.example
+│   ├── .env
+│   ├── tsconfig.json
+│   ├── vite.config.ts
+│   ├── tailwind.config.js
+│   └── eslint.config.js
+├── .github/            # GitHub workflows
+├── .husky/             # Git hooks
+│   ├── pre-commit
+│   └── commit-msg
+└── docker/             # Docker configuration
+    ├── Dockerfile
+    └── docker-compose.yml
 ```
 
-## 📜 Available Scripts
+## 🐳 Docker
+
+### Using Docker Compose (Recommended)
 
 ```bash
-npm run dev         # Start development server
-npm run build       # Build for production
-npm run preview     # Preview production build
-npm run lint        # Run ESLint
+# Start the app
+docker-compose up
+
+# Stop the app
+docker-compose down
 ```
 
-## 📚 Documentation
+### Manual Docker Commands
 
-- [Contributing Guide](./CONTRIBUTING.md)
-- [Code of Conduct](./CODE_OF_CONDUCT.md)
-- [Security Policy](./SECURITY.md)
-- [Technical Documentation](./docs/TECHNICAL.md)
-- [Changelog](./CHANGELOG.md)
-- [License](./LICENSE)
+```bash
+# Build the image
+docker build -t react-app .
 
-The technical documentation provides detailed information about:
+# Run the container
+docker run -p 3000:3000 react-app
+```
 
-- Project architecture and structure
-- State management patterns
-- Development tools and configurations
-- Deployment strategies
-- Security considerations
-- Performance optimizations
-- Browser support
+## 🧪 Testing
 
-## 🎨 Customization
+This template uses Vitest and React Testing Library. Example tests are included in the `src/components` directory.
 
-### Styling
+```bash
+# Run tests in watch mode
+npm run test
 
-The template uses Tailwind CSS with custom configuration. You can modify the theme in `tailwind.config.js`:
+# Run tests with coverage
+npm run test:coverage
+```
 
-- 🎨 Colors
-- 📝 Typography
-- 📏 Spacing
-- 📱 Breakpoints
+## ⚙️ Environment Variables
 
-### Components
+Create a `.env` file in the root directory:
 
-Built with modern practices:
+```env
+# App Configuration
+VITE_APP_NAME=React Startup
+VITE_APP_VERSION=1.0.0
 
-- ⚛️ Functional components
-- 🪝 React hooks
-- 📘 TypeScript interfaces
-- 🎯 Strong typing
+# Development
+VITE_DEV_PORT=3000
+VITE_DEV_HOST=localhost
+
+# API Configuration
+VITE_API_URL=https://api.example.com
+
+# Production
+VITE_PROD_URL=https://your-app.com
+
+# Analytics
+VITE_ANALYTICS_ID=UA-XXXXX-Y
+```
+
+> Note: All environment variables must be prefixed with `VITE_` to be accessible in the app.
+
+## 🚀 Deployment
+
+### Vercel Deployment
+
+1. Connect your GitHub repository to Vercel
+2. Configure build settings:
+   - Build Command: `npm run build`
+   - Output Directory: `dist`
+   - Install Command: `npm install`
+3. Add environment variables from `.env`
+4. Deploy!
+
+### Manual Deployment
+
+1. Build the project:
+
+```bash
+npm run build
+```
+
+2. Test the production build:
+
+```bash
+npm run preview
+```
+
+3. Deploy the `dist` folder to your hosting provider
+
+## 🔒 Security
+
+Our template includes basic security practices:
+
+- ✅ Environment variables protection through `.env`
+- ✅ TypeScript type safety
+- ✅ Dependency management with npm/yarn
+- ✅ ESLint security rules
+- ✅ Secure development practices
+
+## 📊 Analytics
+
+The template is prepared for analytics integration through environment variables (`VITE_ANALYTICS_ID`). You can easily add your preferred analytics solution.
+
+## 🌐 Browser Support
+
+- ✅ Chrome (latest)
+- ✅ Firefox (latest)
+- ✅ Safari (latest)
+- ✅ Edge (latest)
+- ✅ Opera (latest)
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+
+We love your input! We want to make contributing as easy and transparent as possible. Please read our [Contributing Guide](CONTRIBUTING.md) for details on:
+
+- Code of Conduct
+- Development process
+- Bug reports
+- Feature requests
+- Pull requests
+- Code review process
 
 ---
 
